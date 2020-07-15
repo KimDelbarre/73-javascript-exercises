@@ -13,7 +13,13 @@
   // to get the value of an input: document.getElementById("element-id").value
 
   document.getElementById("run").addEventListener("click", function () {
-    function factorial(num) {
+    let x = document.querySelector(".field input").value;
+    console.log(x);
+  });
+})();
+
+/*
+function factorial(num) {
       if (num < 0) return -1;
       else if (num == 0) return 1;
       else {
@@ -25,5 +31,10 @@
     let output = factorial(value);
     console.log(output);
     input.value = output;
-  });
-})();
+
+
+let fact = factorial(input);
+
+return input + fact;
+
+*/
