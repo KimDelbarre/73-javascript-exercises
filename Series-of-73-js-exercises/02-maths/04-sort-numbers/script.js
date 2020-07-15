@@ -16,7 +16,7 @@
     numArray.sort(function (a, b) {
       return a - b;
     });
-    console.log(numArray);
-    document.getElementsByTagName("input").innerHTML = "numArray";
+    let x = numArray.toString();
+    document.querySelector(".field input").value = x;
   });
 })();
