@@ -11,16 +11,14 @@
 
 (function fizzbuzzy() {
   let i = 0;
-  for (i = 0; i <= 100; i++);
+  for (i = 0; i < 100; i++);
   if (i % 3 === 0) {
-    return "fizz";
+    console.log("fizz");
   } else if (i % 5 === 0) {
-    return "buzz";
+    console.log("buzz");
   } else if (i % 3 === 0 && i % 5 === 0) {
-    return "fizzbuzz";
+    console.log("fizzbuzz");
   } else {
-    return i;
+    console.log(i);
   }
 })();
-const result = fizzbuzzy().value;
-console.log(result);
