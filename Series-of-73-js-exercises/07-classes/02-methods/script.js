@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  document.getElementById("run").addEventListener("click", function () {
+    class Person {
+      constructor(firstname, lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+      }
+    }
+    let me = new Person("Kim", "Delbarre");
+    console.log(me);
+    console.log(Object.values(me));
+    let myName = me.toString();
+
+    function Sayhello() {
+      console.log("Hello, " + myName + "!");
+    }
+
+    Sayhello();
+  });
 })();
