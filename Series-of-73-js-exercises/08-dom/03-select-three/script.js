@@ -9,8 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function (replaceContent) {
+  var arr = document.getElementsByClassName("target");
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].innerHTML = "Owned!";
+  }
 })();
