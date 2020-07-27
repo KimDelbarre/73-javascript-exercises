@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (function () {
-  document.getElementById("target").style.fontSize = xx - large;
+  let mySpan = document.createElement("span");
+
+  mySpan.innerHTML = document.getElementById("target").style.fontSize =
+   40 px ;
+  console.log(mySpan);
 })();

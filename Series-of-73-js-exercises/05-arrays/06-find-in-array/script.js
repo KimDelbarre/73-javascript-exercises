@@ -88,11 +88,13 @@
         email: "gkeatche@google.fr",
       },
     ];
-    console.log(people.find(function(element, index, array)
- {
-      if (item.firstname === "Jean" && item.lastname === "Dupont") {
-        console.log(item.email);
-      }
-    });
 
-})();
+    {
+      for (let i = 0; i < people.length; i++) {
+        if (firstname === "Jean" && lastname === "Dupont") {
+          console.log(people.email);
+        }
+      }
+    }
+  })();
+});
