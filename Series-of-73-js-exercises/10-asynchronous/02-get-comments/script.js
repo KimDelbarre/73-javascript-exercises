@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  function myCallbackFunction(error, articles) {
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    console.log(articles);
+  }
+
+  window.lib.getPosts(myCallbackFunction);
+
+  window.lib.getComments(id, window.lib.getPosts);
 })();
