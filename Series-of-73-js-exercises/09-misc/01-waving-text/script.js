@@ -12,16 +12,18 @@
 (function () {
   let txt = document.getElementById("target").innerHTML;
   let size = 4;
-  let result;
+  let result = "";
   for (i = 0; i < txt.length; i++) {
-    result += txt
-      .charAt(i)
-      .fontsize(Math.round(5 + 15 * (i / 10 - Math.floor(i / 10))));
+    result += txt.charAt(i).fontsize(7 + 3 * Math.sin(i / 3));
   }
   console.log(result);
   document.getElementById("target").innerHTML = result;
 
   /*
+
+  7 + round(3*(sin(x/10)))
+
+  Math.round(5 + 15 * (i / 10 - Math.floor(i / 10)))
   
   result =
     txt.charAt(0).fontsize(10) +
